@@ -22,5 +22,13 @@ class Postcontroller extends Controller
     {
         return view ('posts.create'); //特に引数など受け取らないので、そのまま受け取るようにしている
     }
+    public function store(Request $request , Post $post)
+    {
+        $input = $request['post'];
+        $post -> fill($input) -> save();
+        
+        return redirect('/posts/'.$post ->id);
+        
+    }
 }
 ?>

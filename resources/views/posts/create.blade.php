@@ -10,7 +10,7 @@
     </head>
     <body>
         <h1> Blog Name</h1>
-        <form action = "/posts" method ="POST">
+        <form action = "/posts" method ="POST"> <!--こちらのリクエストを受け取ったときに対応するpostcontrollerとメソッドを決める-->
             @csrf
             <div class ="title">
                 <h2>Title</h2>

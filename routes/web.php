@@ -21,3 +21,7 @@ Route::get('posts/create',[PostController::class,'create']);
 Route::get('/posts/{post}',[PostController::class,'show']);
 //今回は特定の記事を表示したいので、IDをURLに含めてあげる。そして、｛Post｝としてあげることで
 //動的に変化し、中にはIDの値がはいる。REST思想に従うとURLは扱うデータ名を入れたいので/postsとしておく
+
+Route::post('/posts',[PostController::class,'store']);
+//いままではgetと定義していたが、データを渡すアクセスを行うので、postと定義している。
+//また、<form action = "/posts" method ="POST">を受け取った時に対応するメソッド。
