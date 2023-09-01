@@ -13,7 +13,7 @@
         <div class = "posts"> <!--Postcontroller.phpでwith（）変数名にpostsを設定したのでここで使える-->
             @foreach ($posts as $post)
                 <div class='post'>
-                    <h2 class='title'>{{ $post->title }}</h2>
+                    <a href = "/posts/{{ $post->id}}"><h2 class='title'>{{ $post->title }}</h2></a>
                     <p class='body'>{{ $post->body }}</p>
                     <h3 class ="title">{{$post->title}}</h3>
                     <p class = "body">{{$post->body}}</p>
