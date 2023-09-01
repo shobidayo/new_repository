@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\PostRequest;
 use App\Models\Post;
 
 class Postcontroller extends Controller
@@ -22,7 +23,7 @@ class Postcontroller extends Controller
     {
         return view ('posts.create'); //特に引数など受け取らないので、そのまま受け取るようにしている
     }
-    public function store(Request $request , Post $post)
+    public function store(PostRequest $request , Post $post)
     {
         $input = $request['post'];
         $post -> fill($input) -> save();
