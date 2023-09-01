@@ -18,5 +18,9 @@ class Postcontroller extends Controller
         return view('posts/show')->with(['post' => $post]);
         //こちらで返すViewは、Show.blade.phpのwithメソッドを使い、'post'という名前で＄postのデータを渡す
     }
+    public function create()
+    {
+        return view ('posts.create'); //特に引数など受け取らないので、そのまま受け取るようにしている
+    }
 }
 ?>
