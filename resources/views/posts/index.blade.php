@@ -10,6 +10,7 @@
     </head>
     <body>
         <h1> Blog Name</h1>
+        <a href ="/posts/create">create</a> <!--create.brade.phphで表示できるように導線を追加した-->
         <div class = "posts"> <!--Postcontroller.phpでwith（）変数名にpostsを設定したのでここで使える-->
             @foreach ($posts as $post)
                 <div class='post'>

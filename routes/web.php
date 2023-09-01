@@ -15,6 +15,9 @@ use App\Http\Controllers\PostController;  //外部にあるPostControllerクラ�
 */
 
 Route::get('/',[PostController::class,'index']);
+Route::get('posts/create',[PostController::class,'create']);
+//新規作成画面の表示は、getリクエストの'/'','posts','/','create'で、Postを新規作成する画面を取得する。
+
 Route::get('/posts/{post}',[PostController::class,'show']);
 //今回は特定の記事を表示したいので、IDをURLに含めてあげる。そして、｛Post｝としてあげることで
 //動的に変化し、中にはIDの値がはいる。REST思想に従うとURLは扱うデータ名を入れたいので/postsとしておく
