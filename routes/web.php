@@ -27,3 +27,6 @@ Route::post('/posts',[PostController::class,'store']);
 //また、<form action = "/posts" method ="POST">を受け取った時に対応するメソッド。
 Route::get('/posts/{post}/edit',[PostController::class,'edit']);
 Route::put('/posts/{post}',[PostController::class,'update']);
+Route::delete('/posts/{post}', [PostController::class,'delete']);
+//ここでは、当行の削除を実装していくのでリクエストの種類はdeleteにしている。
+//ルートパラメーター{post}には、削除したい投稿のIDが入るので、PostControllerに渡すことができる
