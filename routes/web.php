@@ -25,3 +25,5 @@ Route::get('/posts/{post}',[PostController::class,'show']);
 Route::post('/posts',[PostController::class,'store']);
 //いままではgetと定義していたが、データを渡すアクセスを行うので、postと定義している。
 //また、<form action = "/posts" method ="POST">を受け取った時に対応するメソッド。
+Route::get('/posts/{post}/edit',[PostController::class,'edit']);
+Route::put('/posts/{post}',[PostController::class,'update']);
