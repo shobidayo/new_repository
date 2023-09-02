@@ -20,11 +20,29 @@
                     <p class = "body">{{$post->body}}</p>
                     <h4 class = "title">{{$post->title}}</h4>
                     <p class = "body">{{$post ->body}}</p>
+                        <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post">
+                        <!--Id=には、投稿ごとに変更したいので、各投稿がもつID（＄post）を指定する。
+                        例えば、formが1のIDであれば、form_1という値が指定される。-->
+                        @csrf
+                        @method('DELETE')
+                        <button type="button" onclick="deletePost({{ $post->id }})">delete</button> 
+                        <!--onclickを押すと、JavaScriptの関数を実行するようにIDなども設定している-->
+                    </form>
                 </div>
             @endforeach
         </div>
         <div class = "paginate">
             {{ $posts->links() }}
         </div>
+            <script>
+            function deletePost(id) {
+            'use strict'
+
+            if (confirm('削除すると復元できません。\n本当に削除しますか？')) {
+                document.getElementById(`form_${id}`).submit();
+        }
+    }
+
+        </script>
     </body>
 </html>
