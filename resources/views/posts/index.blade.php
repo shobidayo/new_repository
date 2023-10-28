@@ -15,11 +15,8 @@
             @foreach ($posts as $post)
                 <div class='post'>
                     <a href = "/posts/{{ $post->id}}"><h2 class='title'>{{ $post->title }}</h2></a>
+                    <a href = "">{{ $post->category->name }}</a>
                     <p class='body'>{{ $post->body }}</p>
-                    <h3 class ="title">{{$post->title}}</h3>
-                    <p class = "body">{{$post->body}}</p>
-                    <h4 class = "title">{{$post->title}}</h4>
-                    <p class = "body">{{$post ->body}}</p>
                         <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post">
                         <!--Id=には、投稿ごとに変更したいので、各投稿がもつID（＄post）を指定する。
                         例えば、formが1のIDであれば、form_1という値が指定される。-->
@@ -34,6 +31,7 @@
         <div class = "paginate">
             {{ $posts->links() }}
         </div>
+        
             <script>
             function deletePost(id) {
             'use strict'
@@ -44,5 +42,6 @@
     }
 
         </script>
+        {{ Auth::user()->name }}
     </body>
 </html>
