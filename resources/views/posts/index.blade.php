@@ -42,6 +42,6 @@
     }
 
         </script>
-        {{ Auth::user()->name }}
+        ユーザー名：{{ Auth::user()->name }}
     </body>
 </html>
