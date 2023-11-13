@@ -31,7 +31,7 @@ https://confort-booking.com/
 
 
 ## ER図
-[ER図](file:///C:/Users/aomur/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/ER%E5%9B%B3%E5%AE%8C%E6%88%90.pdf)
+[ER図.pdf](https://github.com/shobidayo/new_repository/files/13334140/ER.pdf)
 
 ## 使用技術
 
