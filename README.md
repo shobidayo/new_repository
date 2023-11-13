@@ -7,19 +7,35 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## このプロジェクトについて
+## Enhance Your Travel Experience with Seamless Reservations
+You colud book for confortable, Wishing you a wonderfor journey.
+![25D7CD9F-3A13-42DB-A65A-A6E7F828B785](https://github.com/shobidayo/new_repository/assets/142150831/624a1278-979e-4cd1-b73e-ca76085cfb16)
 
-##アプリのURL
-<a href = "https://confort-booking.com/" alt="App URL"></a>
-##サービスの概要
 
-##アプリを開発したきっかけ
+## サービスのURL
+https://confort-booking.com/
 
-##アプリに込めた思い・今後
+## サービスの概要
+快適にホテル予約を行えるようにするためのアプリケーションです。
 
-##使用技術
+## アプリケーションへの想い
+思い出作りや旅行をする際にホテルは重要な場所。  
+ホテルを予約するにはとても手間がかかってしまうことや、予約の方法が難しいというお声が気になっています。  
+そのような方々でも簡単に予約ができ、快適に旅行を楽しめるようにしたいという想いから作成しました。
 
-##ER図
+## 今後追加する機能
+お客様が快適にご予約できることも重要ですが、管理者側も操作が簡単なるようにしていきたいと考えております。
+
+- 管理者側（ダッシュボード、予約編集・削除などの機能など）
+- お客様側（自動メール、予約のこだわり検索機能など）
+
+
+## ER図
+[ER図](file:///C:/Users/aomur/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/ER%E5%9B%B3%E5%AE%8C%E6%88%90.pdf)
+
+## 使用技術
+
+## ER図
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
