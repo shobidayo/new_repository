@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Enhance Your Travel Experience with Seamless Reservations　快適な予約で旅行を楽しむ
+## Enhance Your Travel Experience with Seamless Reservations
 ![25D7CD9F-3A13-42DB-A65A-A6E7F828B785](https://github.com/shobidayo/new_repository/assets/142150831/624a1278-979e-4cd1-b73e-ca76085cfb16)
-
+You colud book for confortable< Wishing you a wonderfor journey.
 
 ##サービスの概要
 
