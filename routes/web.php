@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
+use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;  //外部にあるPostControllerクラスをインポート。
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,19 +16,23 @@ use App\Http\Controllers\PostController;  //外部にあるPostControllerクラ�
 |
 */
 
-Route::get('/',[PostController::class,'index']);
-Route::get('posts/create',[PostController::class,'create']);
-//新規作成画面の表示は、getリクエストの'/'','posts','/','create'で、Postを新規作成する画面を取得する。
+Route::get('/', function () {
+    return Inertia::render('Welcome', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
 
-Route::get('/posts/{post}',[PostController::class,'show']);
-//今回は特定の記事を表示したいので、IDをURLに含めてあげる。そして、｛Post｝としてあげることで
-//動的に変化し、中にはIDの値がはいる。REST思想に従うとURLは扱うデータ名を入れたいので/postsとしておく
+Route::get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::post('/posts',[PostController::class,'store']);
-//いままではgetと定義していたが、データを渡すアクセスを行うので、postと定義している。
-//また、<form action = "/posts" method ="POST">を受け取った時に対応するメソッド。
-Route::get('/posts/{post}/edit',[PostController::class,'edit']);
-Route::put('/posts/{post}',[PostController::class,'update']);
-Route::delete('/posts/{post}', [PostController::class,'delete']);
-//ここでは、当行の削除を実装していくのでリクエストの種類はdeleteにしている。
-//ルートパラメーター{post}には、削除したい投稿のIDが入るので、PostControllerに渡すことができる
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';

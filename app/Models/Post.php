@@ -13,13 +13,19 @@ class Post extends Model
     
     protected $fillable =[
         'title',
-        'body'
+        'body',
+        'category_id'
         ];
+        
+    public function category()
+{
+    return $this->belongsTo(Category::class);
+}
     
-    public function getPaginateByLimit(int $limit_count =5)
+    public function getPaginateByLimit(int $limit_count =2)
     {
-
-    return $this->orderBy('updated_at', 'DESC')->paginate($limit_count);
+        return $this::with('category')->orderBy('updated_at', 'DESC')->paginate($limit_count);
     }
+    
 }    
 ?>
