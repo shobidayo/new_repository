@@ -31,6 +31,7 @@ https://confort-booking.com/
 
 
 ## ER図
+![スクリーンショット 2023-11-13 201026](https://github.com/shobidayo/new_repository/assets/142150831/8d27762a-e8a1-432e-95e0-02ab50db7696)
 [ER図.pdf](https://github.com/shobidayo/new_repository/files/13334140/ER.pdf)
 
 ## 使用技術
