@@ -7,8 +7,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## このプロジェクトについて
-
+## 快適な予約で旅行を楽しむ
+写真入れる
 ##アプリのURL
 <a href = "https://confort-booking.com/" alt="App URL"></a>
 ##サービスの概要
