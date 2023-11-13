@@ -36,5 +36,5 @@ https://confort-booking.com/
 - Mysql(10.2.38-MariaDB)
 - Amazon S3
 
-## ER図
+## 機能一覧
 
