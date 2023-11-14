@@ -20,7 +20,7 @@ https://confort-booking.com/
 [ER図.pdf](https://github.com/shobidayo/new_repository/files/13334140/ER.pdf)
 
 ## 機能一覧
-| TOP画面  | 新規登録画面 |
+| TOP画面  | ユーザー登録画面 |
 | :---: | :---: | 
 | ![スクリーンショット 2023-11-14 104805](https://github.com/shobidayo/new_repository/assets/142150831/e8e58352-ef36-433c-96cd-25d21bd8111a) | ![スクリーンショット 2023-11-14 105117](https://github.com/shobidayo/new_repository/assets/142150831/55ae4a66-4752-4203-817e-251bb23b4bdf)
 | TOPを開いた際に、一覧ですべて見ることができるような<br>実装をしました。 |新規登録画面は必要のない情報は<br>入力しないように実装しました。|  
@@ -28,8 +28,12 @@ https://confort-booking.com/
 | ログイン画面  | プロフィール画面 |
 | :---: | :---: |
 |![スクリーンショット 2023-11-14 105139](https://github.com/shobidayo/new_repository/assets/142150831/0c8336c5-0caf-4469-a887-668de8cd8508)|![スクリーンショット 2023-11-14 110132](https://github.com/shobidayo/new_repository/assets/142150831/94045d40-8dea-49a2-ae80-7a474558866d)|
-| メールアドレスとパスワードでログインできるように<br>実装しました。 |プロフィール編集、パスワード更新、アカウント削除ができるように実装しました。|
+| メールアドレスとパスワードでログインできるように<br>実装しました。 |プロフィール編集、パスワード更新、アカウント削除ができるように実装しました。|  
 
+| ログイン後の一覧画面  | 予約検索画面 |
+| :---: | :---: |
+|![スクリーンショット 2023-11-14 111418](https://github.com/shobidayo/new_repository/assets/142150831/4191b60b-8187-44e6-8d21-ff3beb8ed2e2)|![スクリーンショット 2023-11-14 111457](https://github.com/shobidayo/new_repository/assets/142150831/6374d85e-c5a0-4856-b7c0-81a51641bc4e)|
+|ログイン後、予約確認と予約をするボタンが表示されるように実装しました。|泊まりたい人数、お部屋のタイプを選択できるようにしました。また、チェックイン日から最大７日まで選択できるように実装しました。|
 
 ## 使用技術
 #### フロントエンド
