@@ -22,6 +22,11 @@ https://confort-booking.com/
 ## 機能一覧
 
 ## 使用技術
+| TOP画面  | 新規登録画面 | プロフィール編集画面 |
+| :---: | :---: | :---: |
+| ![スクリーンショット 2023-11-14 104805](https://github.com/shobidayo/new_repository/assets/142150831/e8e58352-ef36-433c-96cd-25d21bd8111a) | TD | TD |
+| TD | TD | TD |
+
 #### フロントエンド
 - HTML
 - CSS
