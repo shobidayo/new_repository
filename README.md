@@ -23,7 +23,8 @@ https://confort-booking.com/
 | TOP画面  | 新規登録画面 |
 | :---: | :---: | 
 | ![スクリーンショット 2023-11-14 104805](https://github.com/shobidayo/new_repository/assets/142150831/e8e58352-ef36-433c-96cd-25d21bd8111a) | ![スクリーンショット 2023-11-14 105117](https://github.com/shobidayo/new_repository/assets/142150831/55ae4a66-4752-4203-817e-251bb23b4bdf)
-| TOPを開いた際に、一覧ですべて見ることができるようにシンプルに実装しました |新規登録画面は必要のない情報は入力しないように実装しました。|
+| TOPを開いた際に、一覧ですべて見ることができるようにシンプルに実装しました |新規登録画面は必要のない情報は入力しないように実装しました。|  
+
 | ログイン画面  | プロフィール画面 |
 | :---: | :---: |
 |![スクリーンショット 2023-11-14 105139](https://github.com/shobidayo/new_repository/assets/142150831/0c8336c5-0caf-4469-a887-668de8cd8508)|![スクリーンショット 2023-11-14 110132](https://github.com/shobidayo/new_repository/assets/142150831/94045d40-8dea-49a2-ae80-7a474558866d)|
